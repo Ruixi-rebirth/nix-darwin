@@ -28,13 +28,10 @@
       eza
       p7zip
       unzip
-      joshuto
       ffmpeg
       nodejs
       fd
       ripgrep
-      chatgpt-cli
-      aichat
     ];
   };
 
@@ -53,7 +50,7 @@
 
   # Necessary for using flakes on this system.
   nix = {
-    package = pkgs.nix;
+    package = pkgs.nixVersions.latest;
     settings = {
       experimental-features = "nix-command flakes";
       auto-optimise-store = false; # Optimise syslinks
@@ -76,8 +73,6 @@
     brews = [
       "iproute2mac"
       "pinentry-mac"
-      "prometheus"
-      "node_exporter"
       "aliyun-cli"
       "awscli"
       "jq"
@@ -85,10 +80,9 @@
       "mysql"
       "pkg-config"
       "poetry"
-      "lrzsz"
       "cloc"
       "yazi"
-      "go"
+      "rust"
     ];
     taps = [
       "anhoder/go-musicfox"

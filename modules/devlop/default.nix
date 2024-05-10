@@ -1,3 +1,3 @@
 [
-  /* ./go/go.nix */
+  ./go/go.nix
 ]

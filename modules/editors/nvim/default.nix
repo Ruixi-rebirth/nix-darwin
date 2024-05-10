@@ -14,7 +14,7 @@ let
 
         package = mkOption {
           type = types.package;
-          default = inputs.nvim-flake.packages.${pkgs.system}.nvim;
+          default = inputs.nvim-flake.packages.${pkgs.system}.lazynvim;
           description = "The Neovim package to use.";
         };
 

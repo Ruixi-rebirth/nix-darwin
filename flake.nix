@@ -65,9 +65,6 @@
                 git
                 neovim
               ];
-              shellHook = ''
-                export PS1="\[\e[0;31m\](Secret)\$ \[\e[m\]"
-              '';
               inputsFrom = [
                 config.flake-root.devShell
                 config.mission-control.devShell
@@ -98,9 +95,7 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    joshuto.url = "github:Ruixi-rebirth/joshuto/dev";
     nixd.url = "github:nix-community/nixd";
-    neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
     flake-root.url = "github:srid/flake-root";
     mission-control.url = "github:Platonic-Systems/mission-control";
     treefmt-nix.url = "github:numtide/treefmt-nix";

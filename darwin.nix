@@ -3,7 +3,7 @@
 let
   pkgs = import nixpkgs {
     inherit system;
-    config.allowUnfree = true; # Allow proprietary software
+    config.allowUnfree = true; 
     config.allowUnsupportedSystem = true;
   };
 
@@ -33,8 +33,6 @@ in
           overlays =
             [
               self.overlays.default
-              #inputs.neovim-nightly-overlay.overlay
-              inputs.joshuto.overlays.default
               inputs.nixd.overlays.default
             ];
         };
