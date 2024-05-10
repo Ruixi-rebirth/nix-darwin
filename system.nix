@@ -35,16 +35,6 @@
     ];
   };
 
-  fonts = {
-    fontDir.enable = true;
-    fonts = with pkgs; [
-      noto-fonts
-      noto-fonts-cjk
-      noto-fonts-emoji
-      nerdfonts
-      twemoji-color-font
-    ];
-  };
   # Auto upgrade nix package and the daemon service.
   services.nix-daemon.enable = true;
 
