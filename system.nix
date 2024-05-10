@@ -30,6 +30,7 @@
       unzip
       ffmpeg
       nodejs
+      nodePackages.pnpm
       fd
       ripgrep
     ];
